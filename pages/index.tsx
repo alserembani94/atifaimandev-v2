@@ -1,5 +1,6 @@
 // Importing dependencies
 import Link from 'next/link';
+import { GetStaticProps, NextPage } from 'next';
 import { IconContext } from 'react-icons';
 import {
   IoLogoFacebook,
@@ -14,7 +15,6 @@ import styles from 'styles/Home.module.scss';
 
 // Importing components
 import Layout from 'components/Layout';
-import { GetStaticProps, NextPage } from 'next';
 
 const socmedSize = "2rem";
 
@@ -38,7 +38,7 @@ const Home: NextPage = () => {
         
         <Link href="/twitter">
           <a target="_blank" id="twitter">
-            <IconContext.Provider value={{ className: "cta_twitter" }}>
+            <IconContext.Provider value={{ className: styles.cta_twitter }}>
               <IoLogoTwitter size={socmedSize} />
             </IconContext.Provider>
           </a>
@@ -46,7 +46,7 @@ const Home: NextPage = () => {
         
         <Link href="/facebook">
           <a target="_blank" id="facebook">
-            <IconContext.Provider value={{ className: "cta_facebook" }}>
+            <IconContext.Provider value={{ className: styles.cta_facebook }}>
               <IoLogoFacebook size={socmedSize} />
             </IconContext.Provider>
           </a>
@@ -54,7 +54,7 @@ const Home: NextPage = () => {
         
         <Link href="/behance">
           <a target="_blank" id="behance">
-            <IconContext.Provider value={{ className: "cta_behance" }}>
+            <IconContext.Provider value={{ className: styles.cta_behance }}>
               <IoLogoBehance size={socmedSize} />
             </IconContext.Provider>
           </a>
@@ -62,7 +62,7 @@ const Home: NextPage = () => {
         
         <Link href="/github">
           <a target="_blank" id="github">
-            <IconContext.Provider value={{ className: "cta_github" }}>
+            <IconContext.Provider value={{ className: styles.cta_github }}>
               <IoLogoGithub size={socmedSize} />
             </IconContext.Provider>
           </a>
@@ -70,7 +70,7 @@ const Home: NextPage = () => {
         
         <Link href="/linkedin">
           <a target="_blank" id="linkedin">
-            <IconContext.Provider value={{ className: "cta_linkedin" }}>
+            <IconContext.Provider value={{ className: styles.cta_linkedin }}>
               <IoLogoLinkedin size={socmedSize} />
             </IconContext.Provider>
           </a>
