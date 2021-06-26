@@ -37,42 +37,32 @@ const Home: NextPage = () => {
       <div className={styles.cta}>
         
         <Link href="/twitter">
-          <a target="_blank" id="twitter">
-            <IconContext.Provider value={{ className: styles.cta_twitter }}>
+          <a target="_blank" id="twitter" className={styles.twitter}>
               <IoLogoTwitter size={socmedSize} />
-            </IconContext.Provider>
           </a>
         </Link>
         
         <Link href="/facebook">
-          <a target="_blank" id="facebook">
-            <IconContext.Provider value={{ className: styles.cta_facebook }}>
+          <a target="_blank" id="facebook" className={styles.facebook}>
               <IoLogoFacebook size={socmedSize} />
-            </IconContext.Provider>
           </a>
         </Link>
         
         <Link href="/behance">
-          <a target="_blank" id="behance">
-            <IconContext.Provider value={{ className: styles.cta_behance }}>
+          <a target="_blank" id="behance" className={styles.behance}>
               <IoLogoBehance size={socmedSize} />
-            </IconContext.Provider>
           </a>
         </Link>
         
         <Link href="/github">
-          <a target="_blank" id="github">
-            <IconContext.Provider value={{ className: styles.cta_github }}>
+          <a target="_blank" id="github" className={styles.github}>
               <IoLogoGithub size={socmedSize} />
-            </IconContext.Provider>
           </a>
         </Link>
         
         <Link href="/linkedin">
-          <a target="_blank" id="linkedin">
-            <IconContext.Provider value={{ className: styles.cta_linkedin }}>
+          <a target="_blank" id="linkedin" className={styles.linkedin}>
               <IoLogoLinkedin size={socmedSize} />
-            </IconContext.Provider>
           </a>
         </Link>
 

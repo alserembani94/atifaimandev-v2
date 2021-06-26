@@ -93,34 +93,34 @@
     gap: 10px;
     margin-top: 1rem;
     
-    &_twitter,
-    &_facebook,
-    &_github,
-    &_behance,
-    &_linkedin {
+    .twitter,
+    .facebook,
+    .github,
+    .behance,
+    .linkedin {
         transition: all 0.2s ease-in;
         &:hover {
             transition: color 0.2s ease-out;
         }
     }
 
-    &_twitter:hover {
+    .twitter:hover {
         color: var(--twitter);
     }
 
-    &_facebook:hover {
+    .facebook:hover {
         color: var(--facebook);
     }
 
-    &_linkedin:hover {
+    .linkedin:hover {
         color: var(--linkedin);
     }
 
-    &_behance:hover {
+    .behance:hover {
         color: var(--behance);
     }
 
-    &_github:hover {
+    .github:hover {
         color: var(--github);
     }
 }
