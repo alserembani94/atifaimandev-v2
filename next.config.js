@@ -42,6 +42,11 @@ module.exports = {
                 destination: 'https://dev.to/alserembani94',
                 permanent: true
             },
+            {
+                source: '/buymeacoffee',
+                destination: 'https://www.buymeacoffee.com/atifaiman',
+                permanent: true
+            },
         ];
     },
 };

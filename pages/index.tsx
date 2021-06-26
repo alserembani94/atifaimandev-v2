@@ -1,5 +1,6 @@
 // Importing dependencies
 import Link from 'next/link';
+import Image from 'next/image';
 import { GetStaticProps, NextPage } from 'next';
 import {
   IoLogoFacebook,
@@ -36,6 +37,7 @@ const Home: NextPage = () => {
       <p>✨ Exciting portfolio is underway! ✨</p>
 
       <div className={styles.seperator} />
+
       <p>How about connecting to my social media?</p>
       <div className={styles.cta}>
         
@@ -81,6 +83,25 @@ const Home: NextPage = () => {
           </a>
         </Link>
 
+      </div>
+
+      <div className={styles.seperator} />
+
+      <div className={styles.support}>
+        <p>You can also support me if you think that I am cool!</p>
+        
+        <Link href="/buymeacoffee">
+          <a target="_blank" id="buymeacoffee">
+            <Image
+              src="/images/button_buymeacoffee.png"
+              alt="Buy me a coffee!"
+              layout="fill"
+              objectFit="cover"
+              objectPosition="center"
+            />
+          </a>
+        </Link>
+        
       </div>
     </Layout>
   )
