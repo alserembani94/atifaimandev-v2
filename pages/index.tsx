@@ -14,10 +14,17 @@ import styles from 'styles/Home.module.scss';
 
 // Importing components
 import Layout from 'components/Layout';
+import { GetStaticProps, NextPage } from 'next';
 
 const socmedSize = "2rem";
 
-export default function Home() {
+export const getStaticProps: GetStaticProps = async (ctx: any) => {
+  return {
+    props: {},
+  };
+};
+
+const Home: NextPage = () => {
   return (
     <Layout
       title="Home"
@@ -73,3 +80,5 @@ export default function Home() {
     </Layout>
   )
 }
+
+export default Home;
