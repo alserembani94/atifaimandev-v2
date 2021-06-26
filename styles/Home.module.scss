@@ -79,3 +79,23 @@
 .icon {
     margin-bottom: 1rem;
 }
+
+.seperator {
+    width: clamp(200px, 100%, 1000px);
+    height: 1px;
+    background: linear-gradient(to left, #00000000, #00000033, #00000000);
+    margin: 20px 0px;
+}
+
+.cta {
+    display: flex;
+    flex-flow: row wrap;
+    gap: 10px;
+    margin-top: 1rem;
+
+    &_twitter:hover {
+        color: #00ACEE;
+        background: #00ACEE;
+        fill: #00ACEE;
+    }
+}

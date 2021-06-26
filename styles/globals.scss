@@ -1,21 +1,62 @@
 html,
 body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+    padding: 0;
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+        Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
 
 a {
-  color: inherit;
-  text-decoration: none;
+    color: inherit;
+    text-decoration: none;
 }
 
 * {
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 p, h1, h2, h3, h4, h5, h6 {
-  margin: 0;
-  padding: 0;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --twitter: #00ACEE;
+    --facebook: #3B5998;
+    --linkedin: #0E76A8;
+    --github: #4078C0;
+    --behance: #053EFF;
+}
+
+.cta {
+    &_twitter,
+    &_facebook,
+    &_github,
+    &_behance,
+    &_linkedin {
+        transition: all 0.2s ease-in;
+        &:hover {
+            transition: color 0.2s ease-out;
+        }
+    }
+
+    &_twitter:hover {
+        color: var(--twitter);
+    }
+
+    &_facebook:hover {
+        color: var(--facebook);
+    }
+
+    &_linkedin:hover {
+        color: var(--linkedin);
+    }
+
+    &_behance:hover {
+        color: var(--behance);
+    }
+
+    &_github:hover {
+        color: var(--github);
+    }
 }

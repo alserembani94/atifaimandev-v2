@@ -1,7 +1,21 @@
-import Head from 'next/head'
-import Image from 'next/image'
-import styles from 'styles/Home.module.scss'
+// Importing dependencies
+import Link from 'next/link';
+import { IconContext } from 'react-icons';
+import {
+  IoLogoFacebook,
+  IoLogoTwitter,
+  IoLogoGithub,
+  IoLogoBehance,
+  IoLogoLinkedin,
+} from 'react-icons/io5'
+
+// Importing stylesheets
+import styles from 'styles/Home.module.scss';
+
+// Importing components
 import Layout from 'components/Layout';
+
+const socmedSize = "2rem";
 
 export default function Home() {
   return (
@@ -10,44 +24,52 @@ export default function Home() {
     >
       <h1 className={styles.icon}>🚧</h1>
       <p>✨ Exciting portfolio is underway! ✨</p>
-      {/* <h1 className={styles.title}>
-        Welcome to <a href="https://nextjs.org">Next.js!</a>
-      </h1> */}
 
-      {/* <p className={styles.description}>
-        Get started by editing{' '}
-        <code className={styles.code}>pages/index.js</code>
-      </p> */}
+      <div className={styles.seperator} />
+      <p>How about connecting to my social media?</p>
+      <div className={styles.cta}>
+        
+        <Link href="/twitter">
+          <a target="_blank" id="twitter">
+            <IconContext.Provider value={{ className: "cta_twitter" }}>
+              <IoLogoTwitter size={socmedSize} />
+            </IconContext.Provider>
+          </a>
+        </Link>
+        
+        <Link href="/facebook">
+          <a target="_blank" id="facebook">
+            <IconContext.Provider value={{ className: "cta_facebook" }}>
+              <IoLogoFacebook size={socmedSize} />
+            </IconContext.Provider>
+          </a>
+        </Link>
+        
+        <Link href="/behance">
+          <a target="_blank" id="behance">
+            <IconContext.Provider value={{ className: "cta_behance" }}>
+              <IoLogoBehance size={socmedSize} />
+            </IconContext.Provider>
+          </a>
+        </Link>
+        
+        <Link href="/github">
+          <a target="_blank" id="github">
+            <IconContext.Provider value={{ className: "cta_github" }}>
+              <IoLogoGithub size={socmedSize} />
+            </IconContext.Provider>
+          </a>
+        </Link>
+        
+        <Link href="/linkedin">
+          <a target="_blank" id="linkedin">
+            <IconContext.Provider value={{ className: "cta_linkedin" }}>
+              <IoLogoLinkedin size={socmedSize} />
+            </IconContext.Provider>
+          </a>
+        </Link>
 
-      {/* <div className={styles.grid}> */}
-        {/* <a href="https://nextjs.org/docs" className={styles.card}>
-          <h2>Documentation &rarr;</h2>
-          <p>Find in-depth information about Next.js features and API.</p>
-        </a> */}
-
-        {/* <a href="https://nextjs.org/learn" className={styles.card}>
-          <h2>Learn &rarr;</h2>
-          <p>Learn about Next.js in an interactive course with quizzes!</p>
-        </a> */}
-
-        {/* <a
-          href="https://github.com/vercel/next.js/tree/master/examples"
-          className={styles.card}
-        >
-          <h2>Examples &rarr;</h2>
-          <p>Discover and deploy boilerplate example Next.js projects.</p>
-        </a> */}
-
-        {/* <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          className={styles.card}
-        >
-          <h2>Deploy &rarr;</h2>
-          <p>
-            Instantly deploy your Next.js site to a public URL with Vercel.
-          </p>
-        </a> */}
-      {/* </div> */}
+      </div>
     </Layout>
   )
 }
