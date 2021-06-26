@@ -7,7 +7,11 @@ import {
   IoLogoGithub,
   IoLogoBehance,
   IoLogoLinkedin,
+  IoLogoMedium,
 } from 'react-icons/io5';
+import {
+  FaDev,
+} from 'react-icons/fa';
 
 // Importing stylesheets
 import styles from 'styles/Home.module.scss';
@@ -15,7 +19,7 @@ import styles from 'styles/Home.module.scss';
 // Importing components
 import Layout from 'components/Layout';
 
-const socmedSize = "2rem";
+const socmedSize = "36px";
 
 export const getStaticProps: GetStaticProps = async (ctx: any) => {
   return {
@@ -62,6 +66,18 @@ const Home: NextPage = () => {
         <Link href="/linkedin">
           <a target="_blank" id="linkedin" className={styles.linkedin}>
               <IoLogoLinkedin size={socmedSize} />
+          </a>
+        </Link>
+                    
+        <Link href="/medium">
+          <a target="_blank" id="medium" className={styles.medium}>
+            <IoLogoMedium size={socmedSize} />
+          </a>
+        </Link>
+        
+        <Link href="/devto">
+          <a target="_blank" id="devto" className={styles.devto}>
+              <FaDev size={socmedSize} />
           </a>
         </Link>
 

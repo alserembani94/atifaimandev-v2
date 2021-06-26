@@ -97,7 +97,9 @@
     .facebook,
     .github,
     .behance,
-    .linkedin {
+    .linkedin,
+    .medium,
+    .devto {
         transition: all 0.2s ease-in;
         &:hover {
             transition: color 0.2s ease-out;
@@ -123,4 +125,12 @@
     .github:hover {
         color: var(--github);
     }
+
+    // .devto:hover {
+    //     color: var(--devto);
+    // }
+    
+    // .medium:hover {
+    //     color: var(--medium);
+    // }
 }

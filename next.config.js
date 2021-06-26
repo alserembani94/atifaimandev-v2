@@ -32,8 +32,16 @@ module.exports = {
                 destination: 'https://www.linkedin.com/in/atif-aiman/',
                 permanent: true
             },
-
-            
+            {
+                source: '/medium',
+                destination: 'https://medium.com/@alserembani94',
+                permanent: true
+            },
+            {
+                source: '/devto',
+                destination: 'https://dev.to/alserembani94',
+                permanent: true
+            },
         ];
     },
 };
