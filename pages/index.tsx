@@ -1,14 +1,13 @@
 // Importing dependencies
 import Link from 'next/link';
 import { GetStaticProps, NextPage } from 'next';
-import { IconContext } from 'react-icons';
 import {
   IoLogoFacebook,
   IoLogoTwitter,
   IoLogoGithub,
   IoLogoBehance,
   IoLogoLinkedin,
-} from 'react-icons/io5'
+} from 'react-icons/io5';
 
 // Importing stylesheets
 import styles from 'styles/Home.module.scss';
