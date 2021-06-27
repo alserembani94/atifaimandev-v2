@@ -1,4 +1,5 @@
 // Importing dependencies
+import { useEffect } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import { GetStaticProps, NextPage } from 'next';
