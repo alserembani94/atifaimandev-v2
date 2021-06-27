@@ -1,5 +1,6 @@
 // Importing dependencies
 import { GetStaticProps, NextPage } from 'next';
+import { useEffect } from 'react';
 
 // Importing stylesheets
 // import styles from 'styles/Home.module.scss';
@@ -17,11 +18,20 @@ export const getStaticProps: GetStaticProps = async (ctx: any) => {
 };
 
 const Home: NextPage = () => {
-  return (
+  useEffect(() => {
+    console.log(process.env.NODE_ENV);
+  }, [])
+  return process.env.NODE_ENV === 'production' ? (
     <Layout
       title="Home"
     >
       <PUM title="✨ Exciting portfolio is underway! ✨"/>
+    </Layout>
+  ) : (
+    <Layout
+      title="Home"
+    >
+      <p>Hello</p>
     </Layout>
   )
 }
