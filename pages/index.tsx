@@ -21,7 +21,7 @@ const Home: NextPage = () => {
     <Layout
       title="Home"
     >
-      {/* <PUM title="✨ Exciting portfolio is underway! ✨"/> */}
+      <PUM title="✨ Exciting portfolio is underway! ✨"/>
     </Layout>
   )
 }
