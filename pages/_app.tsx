@@ -1,7 +1,13 @@
-import 'styles/globals.scss'
-import type { AppProps } from 'next/app'
+import 'styles/globals.scss';
+import type { AppProps } from 'next/app';
+import { NextIntlProvider } from 'next-intl';
+import { NextPage } from 'next';
 
-function MyApp({ Component, pageProps }: AppProps) {
-  return <Component {...pageProps} />
+const MyApp: NextPage<AppProps> = ({ Component, pageProps }: AppProps) => {
+  return (
+    <NextIntlProvider messages={pageProps.messages}>
+      <Component {...pageProps} />
+    </NextIntlProvider>
+  )
 }
-export default MyApp
+export default MyApp;

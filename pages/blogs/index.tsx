@@ -7,9 +7,6 @@ import { useEffect } from 'react';
 
 // Importing components
 import { Layout, PUM } from 'components/Main';
-import {
-  HomeBanner,
-} from 'components/Home';
 
 const socmedSize = "36px";
 
@@ -27,33 +24,33 @@ export const getStaticProps: GetStaticProps = async (ctx: any) => {
   };
 };
 
-type HomeProps = {
+type BlogsProps = {
   locale: any,
   locales: any,
 };
 
-const Home: NextPage<HomeProps> = ({
+const Blogs: NextPage<BlogsProps> = ({
   locale,
   locales,
 }) => {
   useEffect(() => {
     // console.log(process.env.NODE_ENV);
     console.log({locale, locales});
-  }, [])
+  }, []);
+
   return process.env.NODE_ENV === 'production' ? (
     <Layout
-      title="Home Under Construction"
+      title="Blogs Under Construction"
       alignment="centered"
     >
       <PUM title="✨ Exciting portfolio is underway! ✨"/>
     </Layout>
   ) : (
     <Layout
-      title="Home"
+      title="Blogs"
     >
-      <HomeBanner />
     </Layout>
   )
 }
 
-export default Home;
+export default Blogs;

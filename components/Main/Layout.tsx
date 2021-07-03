@@ -3,6 +3,7 @@ import { useRouter } from 'next/router';
 import { useEffect } from 'react';
 import styles from 'styles/Layout.module.scss';
 import Footer from './Footer';
+import Header from './Header';
 import {
     SITE_NAME,
     SITE_URL,
@@ -19,6 +20,7 @@ type LayoutProps = {
     imageUrl?: string,
     imageAlt?: string,
     pageType?: string,
+    alignment?: 'centered' | 'normal',
 };
 
 const Layout: React.FC<LayoutProps> = ({
@@ -30,7 +32,8 @@ const Layout: React.FC<LayoutProps> = ({
     isFollowed = true,
     imageUrl = '',
     imageAlt = '',
-    pageType = 'website'
+    pageType = 'website',
+    alignment = 'normal',
 }) => {
     const router = useRouter();
     useEffect(() => {
@@ -108,7 +111,9 @@ const Layout: React.FC<LayoutProps> = ({
                 <meta name="twitter:image:alt" content={imageAlt || title} />
             </Head>
 
-            <main className={styles.main}>
+            <Header />
+
+            <main className={styles.main} data-alignment={alignment}>
                 {children}
             </main>
 

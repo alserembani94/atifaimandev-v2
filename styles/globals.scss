@@ -1,3 +1,5 @@
+@import 'variables';
+
 html,
 body {
     padding: 0;
@@ -15,17 +17,15 @@ a {
     box-sizing: border-box;
 }
 
-p, h1, h2, h3, h4, h5, h6 {
+ul, ol {
+    list-style: none;
+}
+
+p, h1, h2, h3, h4, h5, h6, ul, ol, li {
     margin: 0;
     padding: 0;
 }
 
-:root {
-    --twitter: #00ACEE;
-    --facebook: #3B5998;
-    --linkedin: #0E76A8;
-    --github: #4078C0;
-    --behance: #053EFF;
-    --medium: transparent;
-    --devto: #transparent;
+button, a {
+    cursor: pointer;
 }

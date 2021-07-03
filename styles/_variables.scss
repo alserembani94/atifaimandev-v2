@@ -1,0 +1,36 @@
+:root {
+
+    --black: #000000;
+    --white: #ffffff;
+
+    --primary: #2D3142;
+    --primary1: #4F5D75;
+    --secondary: #EF8354;
+    --secondary1: #D36A3E;
+    --disabled: #BFC0C0;
+
+    --warning: ;
+    --danger: ;
+
+    --main-fg: var(--black);
+
+    --primary-fg: var(--white);
+    --primary-bg: var(--primary);
+    --primary-bg1: var(--primary1);
+    --primary-gradient: linear-gradient(to left, var(--primary-bg), var(--primary-bg1));
+
+    --secondary-fg: var(--white);
+    --secondary-bg: var(--secondary);
+    --secondary-bg1: var(--secondary1);
+    --secondary-gradient: linear-gradient(to left, var(--secondary-bg), var(--secondary-bg1));
+
+    // 2D2D2A, 353831, 38423B, 3F5E5A, 20FC8F
+    
+    --twitter: #00ACEE;
+    --facebook: #3B5998;
+    --linkedin: #0E76A8;
+    --github: #4078C0;
+    --behance: #053EFF;
+    --medium: transparent;
+    --devto: #transparent;
+}

@@ -1,0 +1,16 @@
+.error404 {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    row-gap: 1rem;
+    padding: 20px;
+    p {
+        width: clamp(250px, 100%, 500px);
+    }
+
+    &__title {
+        font-size: 2rem;
+    }
+}

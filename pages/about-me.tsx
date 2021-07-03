@@ -27,33 +27,33 @@ export const getStaticProps: GetStaticProps = async (ctx: any) => {
   };
 };
 
-type HomeProps = {
+type AboutMeProps = {
   locale: any,
   locales: any,
 };
 
-const Home: NextPage<HomeProps> = ({
+const AboutMe: NextPage<AboutMeProps> = ({
   locale,
   locales,
 }) => {
   useEffect(() => {
     // console.log(process.env.NODE_ENV);
     console.log({locale, locales});
-  }, [])
+  }, []);
+  
   return process.env.NODE_ENV === 'production' ? (
     <Layout
-      title="Home Under Construction"
+      title="About Me Under Construction"
       alignment="centered"
     >
       <PUM title="✨ Exciting portfolio is underway! ✨"/>
     </Layout>
   ) : (
     <Layout
-      title="Home"
+      title="About Me"
     >
-      <HomeBanner />
     </Layout>
   )
 }
 
-export default Home;
+export default AboutMe;
