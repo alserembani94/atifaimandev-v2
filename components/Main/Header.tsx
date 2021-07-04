@@ -26,7 +26,7 @@ const Header = () => {
                         </Link>
                     </li>
                     <li>
-                        <button className={styles.Header__eye} data-mode={colorMode} onClick={handleColorMode} />
+                        <button className={styles.Header__eye} data-mode={colorMode} onClick={handleColorMode} aria-label="Logo wheel" />
                     </li>
                     <li>
                         <Link href={routes.Blogs}>
