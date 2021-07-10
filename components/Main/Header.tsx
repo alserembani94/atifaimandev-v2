@@ -25,9 +25,9 @@ const Header = () => {
                             <a>About Me</a>
                         </Link>
                     </li>
-                    <li>
+                    {/* <li>
                         <button className={styles.Header__eye} data-mode={colorMode} onClick={handleColorMode} aria-label="Logo wheel" />
-                    </li>
+                    </li> */}
                     <li>
                         <Link href={routes.Blogs}>
                             <a>Blogs</a>

@@ -24,6 +24,7 @@
     --secondary-bg1: var(--secondary1);
     --secondary-gradient: linear-gradient(to left, var(--secondary-bg), var(--secondary-bg1));
 
+    --page-width: clamp(250px, 100%, 1000px);
     // 2D2D2A, 353831, 38423B, 3F5E5A, 20FC8F
     
     --twitter: #00ACEE;
