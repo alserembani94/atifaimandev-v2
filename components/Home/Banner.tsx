@@ -8,7 +8,7 @@ const Banner: React.FC<BannerProps> = ({}) => {
     return (
         <section className={styles.Banner}>
             <div className={styles.Banner__cover}>
-                <h1>Hey, I&lsquo;m Atif Aiman!</h1>
+                <h1>Hey, I&lsquo;m <span>Atif Aiman!</span></h1>
                 <p>
                     I&lsquo;m an enthusiast web developer, mainly on frontend development.
                     2 years and still counting, I spent my time improving myself, and also advocate
@@ -45,7 +45,7 @@ const Banner: React.FC<BannerProps> = ({}) => {
                         <li>
                             <h6>Developed Jombuat 👨‍👩‍👧‍👦</h6>
                             <p>
-                                A listing platform, featuring all developers from Malaysia, Indonesia, Singapore and Brunei. Of course, others are welcome too!
+                                A listing platform, featuring all developers from Malaysia, Indonesia, Singapore and Brunei. Of course, others are welcome too! Starting as a just-an-impromptu hackaton with <a href="https://fajarsiddiq.com/" target="_blank" rel="noopener noreferrer">Fajar Siddiq</a> during JomLaunch annual event, now it is live for everyone!
                             </p>
                         </li>
                     </ul>
