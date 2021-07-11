@@ -34,14 +34,7 @@ const AboutMe: NextPage<AboutMeProps> = ({
   locale,
   locales,
 }) => {  
-  return process.env.NODE_ENV === 'production' ? (
-    <Layout
-      title="About Me Under Construction"
-      alignment="centered"
-    >
-      <PUM title="✨ Exciting portfolio is underway! ✨"/>
-    </Layout>
-  ) : (
+  return (
     <Layout
       title="About Me"
     >
@@ -50,7 +43,7 @@ const AboutMe: NextPage<AboutMeProps> = ({
 
       <HomeBMAC />
     </Layout>
-  )
-}
+  );
+};
 
 export default AboutMe;
