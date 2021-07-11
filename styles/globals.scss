@@ -44,3 +44,92 @@ p {
 button, a {
     cursor: pointer;
 }
+
+.nextdotjs:hover {
+    color: #333;
+    & ~ p {
+        color: #333;
+    }
+}
+
+.reactjs:hover {
+    color: #61DBFB;
+    transform: rotate(90deg);
+    & ~ p {
+        color: #61DBFB;
+    }
+}
+
+.vercel:hover {
+    color: #000;
+    transform: rotate(90deg);
+    & ~ p {
+        color: #000;
+    }
+}
+
+.nodejs:hover {
+    color: #3C873A;
+    & ~ p {
+        color: #3C873A;
+    }
+}
+
+.strapi:hover {
+    color: #4C25D9;
+    transform: translate(3px, -3px);
+    & ~ p {
+        color: #4C25D9;
+    }
+}
+
+.aws:hover {
+    color: #FF9900;
+    transform: rotateY(360deg);
+    & ~ p {
+        color: #FF9900;
+    }
+}
+
+.vue:hover {
+    color: #41B883;
+    transform: rotateY(180deg);
+    & ~ p {
+        color: #41B883;
+    }
+}
+
+.typescript:hover {
+    color: #007ACC;
+    & ~ p {
+        color: #007ACC;
+    }
+}
+
+.adobexd:hover {
+    color: #D34FCD;
+    & ~ p {
+        color: #D34FCD;
+    }
+}
+
+.adobeai:hover {
+    color: #F79500;
+    & ~ p {
+        color: #F79500;
+    }
+}
+
+.adobeae:hover {
+    color: #9999FF;
+    & ~ p {
+        color: #9999FF;
+    }
+}
+
+.figma:hover {
+    color: #F24E1E;
+    & ~ p {
+        color: #F24E1E;
+    }
+}

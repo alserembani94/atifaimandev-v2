@@ -54,9 +54,9 @@
         background-size: cover;
         transition: transform 1s ease-in-out;
 
-        &[data-mode="dark"] {
-            // transform: translateY(-1rem - ($box-dimension / 2));
-        }
+        // &[data-mode="dark"] {
+        //     // transform: translateY(-1rem - ($box-dimension / 2));
+        // }
 
         &[data-mode="light"] {
             // transform: translateY(1rem + ($box-dimension / 2));
@@ -64,7 +64,7 @@
         }
     }
 
-    a {
-        // text-decoration: none;
-    }
+    // a {
+    //     // text-decoration: none;
+    // }
 }

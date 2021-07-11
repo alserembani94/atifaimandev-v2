@@ -1,0 +1,53 @@
+.Stack {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    row-gap: 5ch;
+    padding: 50px 0px;
+    &__container {
+        width: var(--page-width);
+        padding: 0px 15px;
+        display: flex;
+        flex-flow: column nowrap;
+        row-gap: 2ch;
+    }
+    &__section {
+        display: flex;
+        flex-direction: column;
+        // align-items: center;
+        row-gap: 1ch;
+    }
+
+    &__logo {
+        display: flex;
+        flex-flow: row wrap;
+        align-items: flex-start;
+        justify-content: flex-start;
+        column-gap: 2ch;
+        row-gap: 1ch;
+
+        & > div {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            row-gap: 0.5ch;
+            width: 70px;
+            text-align: center;
+
+            & > p {
+                opacity: 0;
+                font-weight: 600;
+                transition: opacity 0.3s ease;
+                line-height: 1;
+            }
+
+            & > svg:hover ~ p {
+                opacity: 1;
+            }
+        }
+    }
+
+    svg {
+        transition: all 0.25s ease;
+    }
+}

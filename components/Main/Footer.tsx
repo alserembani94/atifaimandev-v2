@@ -21,7 +21,7 @@ const Layout: React.FC = () => {
     return (
         <footer className={styles.footer}>
             <div className={styles.footer__lowerSection}>
-                <p>Pixels built by Atif Aiman</p>
+                <p>Pixels built by Atif Aiman | 2021</p>
                 <div className={styles.footer__cta}>
         
                     <Link href="/twitter">

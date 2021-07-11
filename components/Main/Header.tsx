@@ -28,11 +28,11 @@ const Header = () => {
                     {/* <li>
                         <button className={styles.Header__eye} data-mode={colorMode} onClick={handleColorMode} aria-label="Logo wheel" />
                     </li> */}
-                    <li>
+                    {/* <li>
                         <Link href={routes.Blogs}>
                             <a>Blogs</a>
                         </Link>
-                    </li>
+                    </li> */}
                     <li>
                         <Link href={routes.Home}>
                             <a>Resume</a>
