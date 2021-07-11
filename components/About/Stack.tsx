@@ -3,6 +3,7 @@ import styles from 'styles/About.module.scss';
 // Importing dependencies
 import Image from 'next/image';
 import { IconContext } from 'react-icons';
+import Script from 'next/script';
 import {
     SiNextDotJs,
     SiReact,
@@ -38,7 +39,18 @@ const Stack: React.FC<StackProps> = () => {
                 <h2>What powers my web?</h2>
                 <p>{description}</p>
                 <p>Want to see my code? Sure! Please treat yourself with my code behind my website 😁</p>
-                <blockquote className="twitter-tweet"><p lang="und" dir="ltr"><a href="https://t.co/1rAFiDzG8K">https://t.co/1rAFiDzG8K</a></p>&mdash; Atif al-Serembani（あチップ) (@alserembani) <a href="https://twitter.com/alserembani/status/1414324221640003584?ref_src=twsrc%5Etfw">July 11, 2021</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charSet="utf-8"></script> 
+                <blockquote className="twitter-tweet">
+                    <p lang="und" dir="ltr">
+                        <a href="https://t.co/1rAFiDzG8K">
+                            https://t.co/1rAFiDzG8K
+                        </a>
+                    </p>
+                    &mdash; Atif al-Serembani（あチップ) (@alserembani)
+                    <a href="https://twitter.com/alserembani/status/1414324221640003584?ref_src=twsrc%5Etfw">
+                        July 11, 2021
+                    </a>
+                </blockquote>
+                <Script async src="https://platform.twitter.com/widgets.js" charSet="utf-8"></Script>
             </div>
 
             
